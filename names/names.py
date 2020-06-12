@@ -17,9 +17,9 @@ for name_1 in names_1:
     cache[name_1] = True
 for name_2 in names_2:
     if name_2 in cache:
-    # stretch: if name_2 in names_1: runtime is less than 2 seconds
+    # stretch: if name_2 in names_1: runtime is less than 2 seconds down from exponential time (O(n^2)) to linear time (O(n))
         duplicates.append(name_2)
-
+# runtime approximately 0.005 seconds from exponential (O(n^2)) to logarithmic time (O(nlogn))
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")

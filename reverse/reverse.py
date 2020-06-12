@@ -52,18 +52,19 @@ class LinkedList:
             self.head = node
             self.head.next_node = prev
             return
-sll = LinkedList()
-sll.add_to_head(1)
-sll.add_to_head(2)
-sll.add_to_head(3)
-sll.add_to_head(4)
-sll.add_to_head(5)
-sll.add_to_head(6)
-sll.reverse_list(sll.head, None)
-print(sll.head.get_value())
-print(sll.head.get_next().get_value())
-print(sll.head.get_next().get_next().get_value())
-print(sll.head.get_next().get_next().get_next().get_value())
-print(sll.head.get_next().get_next().get_next().get_next().get_value())
-print(sll.head.get_next().get_next().get_next().get_next().get_next().get_value())
+    # runtime of O(n) aka linear time complexity
+# sll = LinkedList()
+# sll.add_to_head(1)
+# sll.add_to_head(2)
+# sll.add_to_head(3)
+# sll.add_to_head(4)
+# sll.add_to_head(5)
+# sll.add_to_head(6)
+# sll.reverse_list(sll.head, None)
+# print(sll.head.get_value())
+# print(sll.head.get_next().get_value())
+# print(sll.head.get_next().get_next().get_value())
+# print(sll.head.get_next().get_next().get_next().get_value())
+# print(sll.head.get_next().get_next().get_next().get_next().get_value())
+# print(sll.head.get_next().get_next().get_next().get_next().get_next().get_value())
 
