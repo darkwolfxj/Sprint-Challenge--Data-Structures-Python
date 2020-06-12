@@ -11,12 +11,14 @@ names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
-
+cache = {}
 # Replace the nested for loops below with your improvements
 for name_1 in names_1:
-    for name_2 in names_2:
-        if name_1 == name_2:
-            duplicates.append(name_1)
+    cache[name_1] = True
+for name_2 in names_2:
+    if name_2 in cache:
+    # stretch: if name_2 in names_1: runtime is less than 2 seconds
+        duplicates.append(name_2)
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
